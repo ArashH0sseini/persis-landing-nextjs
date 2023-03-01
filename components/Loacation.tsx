@@ -19,7 +19,7 @@ const Location = () => (
     <div className="flex items-center justify-center">
       <Carousel>
         <img src={Hotel1.src} alt=""  className='w-full rounded-2xl' />
-        <img src={Hotel2.src} alt=""  className='w-full h-[75%] rounded-2xl' />
+        <img src={Hotel2.src} alt=""  className='w-full h-[75%] sm:h-[85%] rounded-2xl' />
         <img src={Hotel3.src} alt=""  className='w-full rounded-2xl' />
       </Carousel>
     </div>

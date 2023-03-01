@@ -63,7 +63,7 @@ function JoinEvent() {
           <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-2 sm:space-y-0 space-y-5 w-full justify-between">
             <input
               {...register("name", { required: "This is required." })}
-              placeholder="نام و نام خانوادگی *"
+              placeholder="نام و نام خانوادگی"
               className="contactInput"
               type="text"
             />
@@ -72,7 +72,7 @@ function JoinEvent() {
                 required: "This is required.",
                 pattern: /^\S+@\S+$/i,
               })}
-              placeholder="ایمیل *"
+              placeholder="ایمیل"
               className="contactInput"
               type="email"
             />
@@ -85,20 +85,20 @@ function JoinEvent() {
               maxLength: 12,
               pattern: /^09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}$/,
             })}
-            placeholder="شماره تلفن *"
+            placeholder="شماره تلفن"
             className="contactInput"
             type="text"
           />
           <input
             {...register("job", { required: "This is required." })}
-            placeholder="سمت شغلی *"
+            placeholder="سمت شغلی"
             className="contactInput"
             type="text"
           />
           </div>
           <input
             {...register("message", { required: "This is required." })}
-            placeholder="نام شرکت*"
+            placeholder="نام شرکت"
             className="contactInput"
           />
           <button

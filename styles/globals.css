@@ -129,12 +129,12 @@ body {
   }
 
   .nav.left {
-    @apply left-5 top-24 sm:top-44;
+    @apply left-5 top-20 sm:top-40;
     transform: translateX(-100%) translatey(-50%);
   }
 
   .nav.right {
-    @apply right-5 top-24 sm:top-44;
+    @apply right-5 top-20 sm:top-40;
     transform: translateX(100%) translatey(-50%);
   }
   
