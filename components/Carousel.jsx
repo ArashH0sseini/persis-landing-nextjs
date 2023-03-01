@@ -1,13 +1,9 @@
 import React, { useState } from 'react'
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 
-interface Props {
-    children:any
-}
-
 const MAX_VISIBILITY = 3;
 
-function Carousel({children}:Props) {
+function Carousel({children}) {
     const [active, setActive] = useState(1);
     const count = React.Children.count(children);
     
