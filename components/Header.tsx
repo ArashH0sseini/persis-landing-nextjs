@@ -56,7 +56,7 @@ function Header() {
               بازخورد - بازوی آموزشی گروه پرسیس
             </h1>
             <h2 className="text-[#FF821E] text-sm sm:text-base md:text-xl">
-              نگاهی کاربردی به آموزش اتکا به تجربه و امید به آینده
+              <span className="border-b-[1px] border-[#FF821E]">نگاهی</span> کاربردی به آموزش <span className="border-b-[1px] border-[#FF821E] -mr-1">اتکا به</span> تجربه و امید به آینده
             </h2>
           </div>
         </div>
