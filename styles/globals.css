@@ -1,3 +1,155 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../assets/fonts/Vazirmatn-Regular.ttf");
+}
+
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    overflow-y: scroll;
+    background-color: #131313;
+    font-family: "Vazir";
+    direction: rtl;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #4e4e4e;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff821e;
+    border-radius: 10px;
+  
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff821e;
+  }
+  
+  
+  /* Change Autocomplete styles in Chrome*/
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: rgb(31 41 55);
+    -webkit-box-shadow: 0 0 0px 1000px #253341 inset;
+    box-shadow: 0 0 0px 1000px rgb(148 163 184 / 0.1) inset;
+    transition: background-color 5000s ease-in-out 0s;
+    color: white;
+  }
+  
+  /*! Firefox */    
+  html{
+    scrollbar-color: #ff821e #4e4e4e;
+    scrollbar-width: thin;
+  }
+  
+   /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #4e4e4e;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff821e;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff821e;
+  }
+
+
+  .carousel {
+    @apply relative w-[14rem] h-[14rem] sm:w-[30rem] sm:h-[23rem];
+    perspective: 500px;
+    transform-style: preserve-3d;
+  }
+  @media only screen and (max-width: 500px) {
+    .carousel {
+      perspective: 200px;
+      transform-style: preserve-3d;
+    }
+  }
+
+  .card-container {
+    @apply absolute w-full h-full blur-[calc(var(--abs-offset))] transition-all duration-[0.3s] ease-[ease-out];
+    transform: rotateY(calc(var(--offset) * 50deg))
+      scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * -5rem));
+  }
+  
+  .card {
+    @apply w-full h-full text-gray-400 text-justify transition-all duration-[0.3s] ease-[ease-out] p-8 rounded-2xl;
+  }
+
+  .card h2 {
+    @apply text-center text-[2rem] font-[bold] text-gray-800 mt-0 mb-[0.7em] mx-0;
+  }
+
+  .card p,
+  .card h2 {
+    @apply transition-all duration-[0.3s] ease-[ease-out] opacity-[var(--active)];
+  }
+
+  .nav {
+    @apply text-[white] text-[5rem] absolute flex items-center justify-center z-[2] cursor-pointer select-none border-[unset] top-2/4;
+    background: unset;
+  }
+
+  .nav.left {
+    @apply left-5 top-24 sm:top-44;
+    transform: translateX(-100%) translatey(-50%);
+  }
+
+  .nav.right {
+    @apply right-5 top-24 sm:top-44;
+    transform: translateX(100%) translatey(-50%);
+  }
+  
+  .container {
+    cursor: grab;
+    overflow: auto;
+    display: flex;
+}
+
+.contactInput {
+  @apply outline-none bg-white/90 rounded-lg border-b px-6 lg:px-10 py-4
+  text-gray-800 placeholder-gray-600 transition-all delay-75 ease-out focus:ring-2 focus:ring-gray-800
+  focus:text-black;
+}
+
+.menuItems {
+  @apply cursor-pointer text-white hover:text-[#9EDA16] text-2xl mt-10
+}

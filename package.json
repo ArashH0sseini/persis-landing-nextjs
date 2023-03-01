@@ -6,11 +6,24 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.12",
+    "@heroicons/react": "^2.0.16",
+    "dotenv": "^16.0.3",
+    "framer-motion": "^10.0.1",
     "next": "latest",
+    "nodemailer": "^6.9.1",
+    "prettier": "^2.8.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.36.1",
+    "react-hot-toast": "^2.4.0",
+    "react-social-icons": "^5.15.0",
+    "react-use-draggable-scroll": "^0.4.7",
+    "recoil": "^0.7.6",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
+    "@kamona/tailwindcss-perspective": "^0.1.1",
     "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
