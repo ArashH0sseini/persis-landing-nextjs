@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Hotel1 from "../assets/images/hotel1.jpg";
 import Hotel2 from "../assets/images/hotel2.jpg";
-import Card from "./Card";
+import Hotel3 from "../assets/images/hotel3.jpg";
 import Carousel from "./Carousel";
 
 const CARDS = 3;
@@ -19,8 +19,8 @@ const Location = () => (
     <div className="flex items-center justify-center">
       <Carousel>
         <img src={Hotel1.src} alt=""  className='w-full rounded-2xl' />
-        <img src={Hotel2.src} alt=""  className='w-full h-[85%] rounded-2xl' />
-        <img src={Hotel2.src} alt=""  className='w-full h-[85%] rounded-2xl' />
+        <img src={Hotel2.src} alt=""  className='w-full h-[75%] rounded-2xl' />
+        <img src={Hotel3.src} alt=""  className='w-full rounded-2xl' />
       </Carousel>
     </div>
   </>
