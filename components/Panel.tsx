@@ -10,7 +10,7 @@ function Panel() {
   return (
       <div>
         <div className='flex md:px-14 space-x-2 space-x-reverse items-center justify-center lg:justify-start'>
-        <PresentationChartLineIcon className='w-7 md:mt-1 text-[#FF821E]' />
+        <PresentationChartLineIcon className='w-6 sm:w-7 md:mt-1 text-[#FF821E]' />
         <p className='text-[#FF821E] my-10 text-sm sm:text-lg md:text-xl font-bold lg:text-start'>پنل - نقش هیئت مدیره در مقاطع حساس کسب‌وکار</p>
         </div>
         <div className='flex flex-col'>

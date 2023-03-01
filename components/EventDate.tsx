@@ -4,7 +4,7 @@ import React from 'react'
 
 function EventDate() {
   return (
-    <div className='mb-20 space-y-6'>
+    <div className='my-20 lg:mt-0 space-y-6'>
         <div className='flex px-14 space-x-2 space-x-reverse items-center justify-center'>
             <CalendarDaysIcon className='w-8 text-[#FF821E]' />
             <p className='text-[#FF821E] my-10 text-lg md:text-xl font-bold text-center lg:text-start'>تاریخ برگزاری</p>
@@ -38,7 +38,7 @@ function EventDate() {
                 </div>
             </div>
 
-            <div className='flex justify-between items-center space-x-4 space-x-reverse ring-2 ring-[#FF821E] md:ring-0 md:p-0 p-6 rounded-2xl w-72 md:w-auto'>
+            <div className='flex justify-between items-center space-x-4 md:space-x-reverse ring-2 ring-[#FF821E] md:ring-0 md:p-0 p-6 rounded-2xl w-72 md:w-auto'>
                 <div className='flex items-center justify-center'>
                     <MicrophoneIcon className='relative w-16 text-white bg-[#FF821E] rounded-full p-[13px] z-10' />
                     <div className='absolute bg-[#FF821E]/10 w-20 h-20 rounded-full animate-ping' />
