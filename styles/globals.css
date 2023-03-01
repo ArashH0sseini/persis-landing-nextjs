@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Vazir";
-  src: url("../assets/fonts/Vazirmatn-Regular.ttf");
+  font-family: "Peyda";
+  src: url("../assets/fonts/Peyda-Regular.ttf");
 }
 
 
@@ -18,7 +18,7 @@ body {
     text-decoration: none;
     overflow-y: scroll;
     background-color: #131313;
-    font-family: "Vazir";
+    font-family: "Peyda";
     direction: rtl;
   }
   
