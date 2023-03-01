@@ -11,7 +11,7 @@ function PriceList() {
           <div className="flex flex-col p-6 justify-between mx-auto max-w-lg w-80 h-[350px] text-center rounded-[2rem] border shadow border-gray-600 xl:p-8 bg-gray-800 text-white">
             <h3 className="mb-4 text-2xl font-semibold">شرکت در پنل‌ها</h3>
             <div className="flex justify-center items-baseline my-8">
-              <span className="mr-2 text-5xl font-extrabold">۶۰٬۰۰۰</span>
+              <span className="mr-2 text-5xl font-extrabold">۶۰,۰۰۰</span>
               <span className=" text-gray-400">/تومان</span>
             </div>
 
@@ -56,7 +56,7 @@ function PriceList() {
             <h3 className="mb-4 text-2xl font-semibold">کارگاه‌ها و پنل</h3>
             
             <div className="flex justify-center items-baseline my-8">
-              <span className="mr-2 text-5xl font-extrabold">۳٬۰۰۰٬۰۰۰</span>
+              <span className="mr-2 text-5xl font-extrabold">۳,۰۰۰,۰۰۰</span>
               <span
                 className=" text-gray-100"
               >
@@ -104,7 +104,7 @@ function PriceList() {
           <div className="flex flex-col p-6 justify-between mx-auto max-w-lg w-80 h-[350px] text-center rounded-[2rem] border shadow border-gray-600 xl:p-8 bg-gray-800 text-white">
             <h3 className="mb-4 text-2xl font-semibold">شرکت در کارگاه‌ها</h3>
             <div className="flex justify-center items-baseline my-8">
-              <span className="mr-2 text-5xl font-extrabold">۶۰٬۰۰۰</span>
+              <span className="mr-2 text-5xl font-extrabold">۶۰,۰۰۰</span>
               <span className=" text-gray-400">/تومان</span>
             </div>
 
