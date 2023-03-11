@@ -158,3 +158,17 @@ body {
 .menuItems {
   @apply cursor-pointer text-white hover:text-[#9EDA16] text-2xl mt-10
 }
+
+@keyframes pingg {
+  85%, 100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pingg2 {
+  85%, 100% {
+    transform: scale(-1.2);
+    opacity: 0;
+  }
+}
