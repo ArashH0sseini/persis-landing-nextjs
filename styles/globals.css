@@ -7,6 +7,12 @@
   src: url("../assets/fonts/Peyda-Regular.ttf");
 }
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 
 body {
     -webkit-touch-callout: none;
