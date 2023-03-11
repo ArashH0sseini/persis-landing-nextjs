@@ -13,8 +13,8 @@ function Header() {
   return (
     <header>
       <nav>
-        <div className="container mx-auto px-6 py-3 ">
-          <div className="md:flex md:items-center md:justify-between w-full max-w-4xl mx-auto">
+        <div className="container mx-auto px-6 py-3">
+          <div className="lg:flex lg:items-center lg:justify-between w-full max-w-4xl mx-auto">
             <div className="flex justify-between items-center">
               <div className="text-xl font-semibold text-gray-700">
                   <Link href="#">
@@ -22,7 +22,7 @@ function Header() {
                   </Link>
               </div>
 
-              <div className="flex md:hidden">
+              <div className="flex lg:hidden">
               {open ? (
                   <XMarkIcon
                     className="w-7 h-7 text-white opacity-80 hover:opacity-100"
@@ -37,12 +37,21 @@ function Header() {
               </div>
             </div>
 
-            <div className="hidden -mx-4 md:flex md:items-center ">
-              <Link href="#contact">
-                <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E] capitalize hover:text-[#FF821E]/80">تماس با ما</button>
+            <div className="hidden -mx-4 lg:flex lg:items-center">
+              <Link href="#about">
+                <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E] hover:text-[#FF821E]/80">معرفی پرسیس</button>
               </Link>
-              <Link href="#contact">
-                <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E] capitalize hover:text-[#FF821E]/80">ثبت نام</button>
+              <Link href="#about">
+                <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E]  hover:text-[#FF821E]/80">معرفی بازخورد</button>
+             </Link>
+             <Link href="#why">
+                <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E]  hover:text-[#FF821E]/80 border-b-[1px] border-[#FF821E] ">چرا رویداد هیئت مدیره؟</button>
+             </Link>
+             <Link href="#contact">
+                <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E] hover:text-[#FF821E]/80">ثبت نام</button>
+             </Link>
+             <Link href="#contact">
+                <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E] hover:text-[#FF821E]/80">تماس با ما</button>
              </Link>
             </div>
           </div>

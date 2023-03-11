@@ -11,8 +11,8 @@ function Carousel({children}) {
     <div className='carousel perspective-5'>
       {
         active > 0 && 
-        <button className='nav left' onClick={() => setActive(i => i - 1)}>
-            <ChevronLeftIcon className="w-10 p-1 bg-[#FF821E] rounded-full" />
+        <button className='nav left shadow-lg' onClick={() => setActive(i => i - 1)}>
+            <ChevronLeftIcon className="w-12 p-1 bg-[#FF821E] rounded-full border-[2px] shadow-lg" />
         </button>
       }
       {
@@ -32,8 +32,8 @@ function Carousel({children}) {
       }
       {
       active < count - 1 && 
-        <button className='nav right' onClick={() => setActive(i => i + 1)}>
-            <ChevronRightIcon className="w-10 p-1 bg-[#FF821E] rounded-full" />
+        <button className='nav right shadow-lg' onClick={() => setActive(i => i + 1)}>
+            <ChevronRightIcon className="w-12 p-1 bg-[#FF821E] rounded-full border-[2px] shadow-lg" />
         </button>
         }
     </div>

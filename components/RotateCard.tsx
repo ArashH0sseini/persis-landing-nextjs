@@ -21,7 +21,7 @@ function RotateCard({title,image,description}:Props) {
                         <h3 className='text-lg font-bold text-white text-start px-4'>{title}</h3>
                         <ul className='text-white px-8 space-y-2'>
                             {description.map((desc:any,index:any)=>(
-                                <li key={index} className="text-start list-disc text-sm">{desc}</li>
+                                <li key={index} className="text-start list-disc text-sm font-semibold text-black">{desc}</li>
                             ))}
                         </ul>
                     </div>

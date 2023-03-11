@@ -42,6 +42,15 @@ export default function HamberMenu() {
             <Link href="#">
                 <li className="menuItems">خانه</li>
             </Link>
+            <Link href="#about">
+                <li className="menuItems">معرفی پرسیس</li>
+            </Link>
+            <Link href="#about">
+                <li className="menuItems">معرفی بازخورد</li>
+            </Link>
+            <Link href="#why">
+                <li className="menuItems">چرا رویداد هیئت مدیره؟</li>
+            </Link>
             <Link href="#contact">
                 <li className="menuItems"> تماس با ما </li>
             </Link>

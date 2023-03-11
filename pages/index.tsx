@@ -12,6 +12,9 @@ import Footer from '../components/Footer'
 import { useRecoilValue } from "recoil";
 import { menuState } from "../atoms/menuAtom";
 import HamberMenu from '../components/HamberMenu'
+import AboutPersis from '../components/AboutPersis'
+import WhyThisWorkshop from '../components/WhyThisWorkshop'
+import Blog from '../components/Blog'
 
 
 const Home: NextPage = () => {
@@ -27,15 +30,27 @@ const Home: NextPage = () => {
       {open ? <HamberMenu /> : null}
       <Header />
       <div className='max-w-7xl m-auto'>
+          <section id="about">
+            <AboutPersis />
+          </section>
+
           <Panel />
           <Workshops />
+
+          <section id="why">
+            <WhyThisWorkshop />
+          </section>
+
           <PriceList />
           <EventDate />
           <Loacation />
-          <Sponsors />
+          {/* <Sponsors /> */}
+          <Blog />
+
           <section id="contact">
             <JoinEvent />
           </section>
+
           <Footer />
       </div>
     </div>
