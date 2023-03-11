@@ -145,7 +145,6 @@ body {
   }
   
   .container {
-    cursor: grab;
     overflow: auto;
     display: flex;
 }
