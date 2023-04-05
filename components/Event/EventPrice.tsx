@@ -1,9 +1,8 @@
 import { CheckBadgeIcon } from "@heroicons/react/20/solid";
-import { CheckCircleIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import React from "react";
 
-function PriceList() {
+function EventPrice() {
   return (
     <section>
       <div className=" px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
@@ -14,17 +13,6 @@ function PriceList() {
               <span className="mr-2 text-5xl font-extrabold">۸۰۰,۰۰۰</span>
               <span className=" text-gray-400">/تومان</span>
             </div>
-
-            {/* <ul role="list" className="mb-8 space-y-4 text-left">
-              <li className="flex items-center space-x-2 space-x-reverse">
-              <CheckBadgeIcon className="w-6 text-green-400" />
-                <span>ویژگی شماره یک</span>
-              </li>
-              <li className="flex items-center space-x-2 space-x-reverse">
-                <CheckBadgeIcon className="w-6 text-green-400" />
-                <span>ویژگی شماره دو</span>
-              </li>
-            </ul> */}
             <Link href="#contact">
               <button className=" text-white text-center text-sm w-[80%] mx-auto px-2 py-2.5 rounded-full sm:text-base border-[3px] border-b-0">ثبت درخواست</button>
              </Link>
@@ -63,17 +51,6 @@ function PriceList() {
               <span className="mr-2 text-5xl font-extrabold">۳,۰۰۰,۰۰۰</span>
               <span className=" text-gray-400">/تومان</span>
             </div>
-
-            {/* <ul role="list" className="mb-8 space-y-4 text-left">
-              <li className="flex items-center space-x-2 space-x-reverse">
-              <CheckBadgeIcon className="w-6 text-green-400" />
-                <span>ویژگی شماره یک</span>
-              </li>
-              <li className="flex items-center space-x-2 space-x-reverse">
-                <CheckBadgeIcon className="w-6 text-green-400" />
-                <span>ویژگی شماره دو</span>
-              </li>
-            </ul> */}
             <Link href="#contact">
               <button className=" text-white text-center text-sm w-[80%] mx-auto px-2 py-2.5 rounded-full sm:text-base border-[3px] border-b-0">ثبت درخواست</button>
              </Link>
@@ -86,4 +63,4 @@ function PriceList() {
   );
 }
 
-export default PriceList;
+export default EventPrice;

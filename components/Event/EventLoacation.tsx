@@ -1,14 +1,13 @@
 import { MapIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
 import React from "react";
-import Hotel1 from "../assets/images/hotel1.jpg";
-import Hotel2 from "../assets/images/hotel2.jpg";
-import Hotel3 from "../assets/images/hotel3.jpg";
-import Carousel from "./Carousel";
+import Hotel1 from "../../assets/images/hotel1.jpg";
+import Hotel2 from "../../assets/images/hotel2.jpg";
+import Hotel3 from "../../assets/images/hotel3.jpg";
+import Carousel from "./EventLoacationCarousel";
 
 const CARDS = 3;
 
-const Location = () => (
+const EventLoacation = () => (
   <>
     <div className="flex px-14 space-x-2 space-x-reverse items-center justify-center">
       <MapIcon className="w-8 text-[#FF821E]" />
@@ -26,4 +25,4 @@ const Location = () => (
   </>
 );
 
-export default Location;
+export default EventLoacation;

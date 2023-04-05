@@ -1,34 +1,33 @@
 import { GetStaticProps } from "next";
-import Header from "../../components/Header";
 import { sanityClient, urlFor } from "../../sanity";
 import { Post } from "../../typing";
 import PortableText from "react-portable-text";
 import BlogHeader from "../../components/Blog/BlogHeader";
-import { useRouter } from "next/router";
-import { blogData } from "../../components/Blog/data";
-
+import HamberMenu from "../../components/Layout/HamberMenu";
+import { useRecoilValue } from "recoil";
+import { menuState } from "../../atoms/menuAtom";
 
 interface Props {
   post: Post;
 }
 
 function Post({ post }: Props) {
-
-  console.log(post)
+  const open = useRecoilValue(menuState);
   return (
-    <main>
+    <main className="bg-hero-pattern pb-10">
+      {open ? <HamberMenu /> : null}
       <BlogHeader />
 
-          <div
-            className="w-full bg-cover bg-left md:bg-center h-[35rem] sm:h-[40rem]"
-            style={{ backgroundImage: `url(${urlFor(post.mainImage).url()!})` }}
-          >
-            <div className="flex items-center justify-center h-full w-full bg-neutral-900 bg-opacity-70">
-              <h1 className="text-white text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
-                {post.title}
-              </h1>
-            </div>
-          </div>
+      <div
+        className="w-full bg-cover bg-left md:bg-center h-[35rem] sm:h-[40rem]"
+        style={{ backgroundImage: `url(${urlFor(post.mainImage).url()!})` }}
+      >
+        <div className="flex items-center justify-center h-full w-full bg-neutral-900 bg-opacity-70">
+          <h1 className="text-white text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
+            {post.title}
+          </h1>
+        </div>
+      </div>
 
       <article className="max-w-6xl mx-auto p-5 border-2 mt-8 border-y-0 shadow-lg border-[#FF821E] rounded-[2.5rem]">
         <div className="mt-10">
@@ -56,7 +55,6 @@ function Post({ post }: Props) {
           />
         </div>
       </article>
-
     </main>
   );
 }

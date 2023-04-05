@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/PriceList.tsx", "components/Accordiontjsx", "components/Accordion.tsx", "components/Sponsors.jsx", "components/Carousel.jsx", "pages/post/[slug].tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Event/EventPrice.tsx", "components/Accordiontjsx", "components/WorkShop/WorkshopsItemList.tsx", "components/Event/EventSponsors.jsx", "components/Event/EventLoacationCarousel.jsx", "pages/blog/[slug].tsx"],
   "exclude": ["node_modules"]
 }

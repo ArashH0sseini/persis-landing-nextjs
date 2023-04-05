@@ -1,14 +1,9 @@
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import { workshopsData } from "./WorkshopsData";
 
-interface Props {
-  title: string;
-  image: any;
-  description: any;
-}
-
-export default function Accordion({ title, image, description }: Props) {
+export default function WorkshopsItemList({image,title,description}:any) {
   return (
     <div className="w-full px-4">
       <div className="mx-auto w-full max-w-md rounded-2xl p-2">
@@ -33,11 +28,11 @@ export default function Accordion({ title, image, description }: Props) {
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-white bg-[#FF821E] mt-3 rounded-lg">
                 <ul className="text-white px-8 space-y-2">
-                  {description.map((desc: any, index: any) => (
-                    <li key={index} className="text-start list-disc text-sm">
-                      {desc}
-                    </li>
-                  ))}
+                  {description.map((desc: any) => (
+                  <li className="text-start list-disc text-sm font-semibold text-black">
+                    {desc}
+                  </li>
+                ))}
                 </ul>
               </Disclosure.Panel>
             </>

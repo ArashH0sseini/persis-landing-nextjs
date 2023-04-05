@@ -1,5 +1,5 @@
 import React from "react";
-import quote from "../assets/images/quote.svg";
+import quote from "../../assets/images/quote.svg";
 import { QuestionMarkCircleIcon } from "@heroicons/react/24/outline";
 
 

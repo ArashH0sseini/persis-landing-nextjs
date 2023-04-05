@@ -1,28 +1,23 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import EventDate from '../components/EventDate'
-import Header from '../components/Header'
-import Loacation from '../components/Loacation'
-import Panel from '../components/Panel'
-import PriceList from '../components/PriceList'
-import JoinEvent from '../components/JoinEvent'
-import Sponsors from '../components/Sponsors'
-import Workshops from '../components/Workshops'
-import Footer from '../components/Footer'
+import EventDate from '../components/Event/EventDate'
+import Header from '../components/Layout/Header'
+import Loacation from '../components/Event/EventLoacation'
+import Panel from '../components/WorkShop/WorkshopSpeakers'
+import PriceList from '../components/Event/EventPrice'
+import JoinEvent from '../components/Event/EventContact'
+import Sponsors from '../components/Event/EventSponsors'
+import Workshops from '../components/WorkShop/Workshops'
+import Footer from '../components/Layout/Footer'
 import { useRecoilValue } from "recoil";
 import { menuState } from "../atoms/menuAtom";
-import HamberMenu from '../components/HamberMenu'
-import AboutPersis from '../components/AboutPersis'
-import WhyThisWorkshop from '../components/WhyThisWorkshop'
-import Blog from '../components/Blog/Blog'
-import { sanityClient, urlFor } from "../sanity";
-import { Post } from "../typing";
+import HamberMenu from '../components/Layout/HamberMenu'
+import AboutPersis from '../components/Description/AboutPersis'
+import WhyThisWorkshop from '../components/Description/WhyThisWorkshop'
+import Blog from '../components/Blog/BlogSection'
+import { sanityClient } from "../sanity";
 
-interface Props {
-  posts: [Post];
-}
-
-const Home = ({ posts }: Props) => {
+const Home = () => {
   const open = useRecoilValue(menuState);
 
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRecoilState } from "recoil";
-import { menuState } from '../atoms/menuAtom'
+import { menuState } from '../../atoms/menuAtom'
 
 
 export default function HamberMenu() {
@@ -38,24 +38,24 @@ export default function HamberMenu() {
           duration: 1,
         }}
          className="z-[100] h-screen flex justify-center items-center text-center">
-          <ul className="">
-            <Link href="#">
+          <ul>
+            <Link href="/">
                 <li className="menuItems">خانه</li>
             </Link>
-            <Link href="#about">
+            <Link href="/#about">
                 <li className="menuItems">معرفی پرسیس</li>
             </Link>
-            <Link href="#about">
+            <Link href="/#about">
                 <li className="menuItems">معرفی بازخورد</li>
             </Link>
-            <Link href="#why">
+            <Link href="/#why">
                 <li className="menuItems">چرا رویداد هیئت مدیره؟</li>
             </Link>
-            <Link href="#contact">
-                <li className="menuItems"> تماس با ما </li>
+            <Link href="/#blog">
+                <li className="menuItems">بلاگ</li>
             </Link>
-            <Link href="#contact">
-                <li className="menuItems">ثبت نام</li>
+            <Link href="/#contact">
+                <li className="menuItems">مشاوره و تماس با ما</li>
             </Link>
           </ul>
         </motion.div>

@@ -1,6 +1,6 @@
 import React from "react";
-import persisIcon from "../assets/images/persis-logo.png";
-import bazkhordIcon from "../assets/images/tick.svg";
+import persisIcon from "../../assets/images/persis-logo.png";
+import bazkhordIcon from "../../assets/images/tick.svg";
 
 function AboutPersis() {
   return (
