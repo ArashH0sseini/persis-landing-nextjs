@@ -11,11 +11,11 @@ function PriceList() {
           <div className="flex flex-col p-6 justify-between mx-auto max-w-lg w-80 h-[350px] text-center rounded-[2rem] border shadow border-gray-600 xl:p-8 bg-gray-800 text-white">
             <h3 className="mb-4 text-2xl font-semibold">شرکت در پنل‌ها</h3>
             <div className="flex justify-center items-baseline my-8">
-              <span className="mr-2 text-5xl font-extrabold">۶۰,۰۰۰</span>
+              <span className="mr-2 text-5xl font-extrabold">۸۰۰,۰۰۰</span>
               <span className=" text-gray-400">/تومان</span>
             </div>
 
-            <ul role="list" className="mb-8 space-y-4 text-left">
+            {/* <ul role="list" className="mb-8 space-y-4 text-left">
               <li className="flex items-center space-x-2 space-x-reverse">
               <CheckBadgeIcon className="w-6 text-green-400" />
                 <span>ویژگی شماره یک</span>
@@ -24,7 +24,7 @@ function PriceList() {
                 <CheckBadgeIcon className="w-6 text-green-400" />
                 <span>ویژگی شماره دو</span>
               </li>
-            </ul>
+            </ul> */}
             <Link href="#contact">
               <button className=" text-white text-center text-sm w-[80%] mx-auto px-2 py-2.5 rounded-full sm:text-base border-[3px] border-b-0">ثبت درخواست</button>
              </Link>
@@ -34,7 +34,7 @@ function PriceList() {
             <h3 className="mb-4 text-2xl font-semibold">کارگاه‌ها و پنل</h3>
             
             <div className="flex justify-center items-baseline my-8">
-              <span className="mr-2 text-5xl font-extrabold">۳,۰۰۰,۰۰۰</span>
+              <span className="mr-2 text-5xl font-extrabold">۳,۲۰۰,۰۰۰</span>
               <span
                 className=" text-gray-100"
               >
@@ -45,11 +45,11 @@ function PriceList() {
            <ul role="list" className="mb-8 space-y-4 text-left">
               <li className="flex items-center space-x-2 space-x-reverse">
                 <CheckBadgeIcon className="w-6 text-white" />
-                <span>ویژگی شماره یک</span>
+                <span className="font-bold">۱۳ اردیبهشت، ۱۶ تا ۱۹ پنل</span>
               </li>
               <li className="flex items-center space-x-2 space-x-reverse">
                 <CheckBadgeIcon className="w-6 text-white" />
-                <span>ویژگی شماره دو</span>
+                <span className="font-bold">۱۴و۱۵ اردیبهشت، ۸ تا ۱۴ کارگاه‌ها</span>
               </li>
             </ul>
             <Link href="#contact">
@@ -60,11 +60,11 @@ function PriceList() {
           <div className="flex flex-col p-6 justify-between mx-auto max-w-lg w-80 h-[350px] text-center rounded-[2rem] border shadow border-gray-600 xl:p-8 bg-gray-800 text-white">
             <h3 className="mb-4 text-2xl font-semibold">شرکت در کارگاه‌ها</h3>
             <div className="flex justify-center items-baseline my-8">
-              <span className="mr-2 text-5xl font-extrabold">۶۰,۰۰۰</span>
+              <span className="mr-2 text-5xl font-extrabold">۳,۰۰۰,۰۰۰</span>
               <span className=" text-gray-400">/تومان</span>
             </div>
 
-            <ul role="list" className="mb-8 space-y-4 text-left">
+            {/* <ul role="list" className="mb-8 space-y-4 text-left">
               <li className="flex items-center space-x-2 space-x-reverse">
               <CheckBadgeIcon className="w-6 text-green-400" />
                 <span>ویژگی شماره یک</span>
@@ -73,7 +73,7 @@ function PriceList() {
                 <CheckBadgeIcon className="w-6 text-green-400" />
                 <span>ویژگی شماره دو</span>
               </li>
-            </ul>
+            </ul> */}
             <Link href="#contact">
               <button className=" text-white text-center text-sm w-[80%] mx-auto px-2 py-2.5 rounded-full sm:text-base border-[3px] border-b-0">ثبت درخواست</button>
              </Link>

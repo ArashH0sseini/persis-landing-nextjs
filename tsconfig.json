@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/PriceList.tsx", "components/Accordiontjsx", "components/Accordion.tsx", "components/Sponsors.jsx", "components/Carousel.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/PriceList.tsx", "components/Accordiontjsx", "components/Accordion.tsx", "components/Sponsors.jsx", "components/Carousel.jsx", "pages/post/[slug].tsx"],
   "exclude": ["node_modules"]
 }

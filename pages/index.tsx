@@ -14,10 +14,15 @@ import { menuState } from "../atoms/menuAtom";
 import HamberMenu from '../components/HamberMenu'
 import AboutPersis from '../components/AboutPersis'
 import WhyThisWorkshop from '../components/WhyThisWorkshop'
-import Blog from '../components/Blog'
+import Blog from '../components/Blog/Blog'
+import { sanityClient, urlFor } from "../sanity";
+import { Post } from "../typing";
 
+interface Props {
+  posts: [Post];
+}
 
-const Home: NextPage = () => {
+const Home = ({ posts }: Props) => {
   const open = useRecoilValue(menuState);
 
   return (
@@ -45,7 +50,10 @@ const Home: NextPage = () => {
           <EventDate />
           <Loacation />
           {/* <Sponsors /> */}
+
+          <section id="blog">
           <Blog />
+          </section>
 
           <section id="contact">
             <JoinEvent />
@@ -57,4 +65,26 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Home;
+
+export const getServerSideProps = async () => {
+  const query = `*[_type == "post"]{
+    _id,
+    title,
+    author-> {
+      name,
+      image
+    },
+    description,
+    mainImage,
+    slug
+  }`;
+
+  const posts = await sanityClient.fetch(query);
+
+  return {
+    props: {
+      posts,
+    },
+  };
+};
