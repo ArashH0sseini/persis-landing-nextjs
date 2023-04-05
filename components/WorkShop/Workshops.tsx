@@ -1,8 +1,8 @@
 import { RocketLaunchIcon } from "@heroicons/react/24/outline";
 import React from "react";
+import { workshopsData } from "./workshopsData";
 import WorkshopsItem from "./WorkshopsItem";
 import WorkshopsItemList from "./WorkshopsItemList";
-import { workshopsData } from "./WorkshopsData";
 
 function Workshops() {
   const workshops: any = workshopsData();
@@ -15,7 +15,7 @@ function Workshops() {
           کارگاه ها
         </p>
       </div>
-      
+
       <div className="flex flex-col">
         <div className="hidden min-[500px]:grid min-[500px]:grid-cols-2 lg:grid-cols-4">
           {workshops.map((workshop: any) => (

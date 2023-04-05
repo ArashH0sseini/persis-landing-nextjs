@@ -1,7 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
-import { workshopsData } from "./WorkshopsData";
 
 export default function WorkshopsItemList({image,title,description}:any) {
   return (
