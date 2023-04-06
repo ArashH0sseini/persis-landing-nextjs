@@ -36,28 +36,28 @@ function Navbar() {
           </div>
 
           <div className="hidden -mx-4 lg:flex lg:items-center">
-            <Link href="#about" scroll={false}>
+            <Link href="/#about" scroll={false}>
               <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E] hover:text-[#FF821E]/80">
                 معرفی پرسیس
               </button>
             </Link>
 
-            <Link href="#about" scroll={false}>
+            <Link href="/#about" scroll={false}>
               <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E]  hover:text-[#FF821E]/80">
                 معرفی بازخورد
               </button>
             </Link>
-            <Link href="#why" scroll={false}>
+            <Link href="/#why" scroll={false}>
               <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E]  hover:text-[#FF821E]/80 border-b-[1px] border-[#FF821E] ">
                 چرا رویداد هیئت مدیره؟
               </button>
             </Link>
-            <Link href="#blog" scroll={false}>
+            <Link href="/#blog" scroll={false}>
               <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E] hover:text-[#FF821E]/80">
                  بلاگ
               </button>
             </Link>
-            <Link href="#contact" scroll={false}>
+            <Link href="/#contact" scroll={false}>
                 <button className="block mx-4 mt-2 md:mt-0 text-sm text-[#FF821E] hover:text-[#FF821E]/80">
                   مشاوره و تماس با ما
                 </button>

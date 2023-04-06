@@ -1,21 +1,22 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import EventDate from '../components/Event/EventDate'
-import Header from '../components/Layout/Header'
-import Loacation from '../components/Event/EventLoacation'
-import Panel from '../components/WorkShop/WorkshopSpeakers'
-import PriceList from '../components/Event/EventPrice'
-import JoinEvent from '../components/Event/EventContact'
-import Sponsors from '../components/Event/EventSponsors'
-import Workshops from '../components/WorkShop/Workshops'
-import Footer from '../components/Layout/Footer'
+import type { NextPage } from "next";
+import Head from "next/head";
+import EventDate from "../components/Event/EventDate";
+import Header from "../components/Layout/Header";
+import Loacation from "../components/Event/EventLoacation";
+import Panel from "../components/WorkShop/WorkshopSpeakers";
+import PriceList from "../components/Event/EventPrice";
+import JoinEvent from "../components/Event/EventContact";
+import Sponsors from "../components/Event/EventSponsors";
+import Workshops from "../components/WorkShop/Workshops";
+import Footer from "../components/Layout/Footer";
 import { useRecoilValue } from "recoil";
 import { menuState } from "../atoms/menuAtom";
-import HamberMenu from '../components/Layout/HamberMenu'
-import AboutPersis from '../components/Description/AboutPersis'
-import WhyThisWorkshop from '../components/Description/WhyThisWorkshop'
-import Blog from '../components/Blog/BlogSection'
+import HamberMenu from "../components/Layout/HamberMenu";
+import AboutPersis from "../components/Description/AboutPersis";
+import WhyThisWorkshop from "../components/Description/WhyThisWorkshop";
+import Blog from "../components/Blog/BlogSection";
 import { sanityClient } from "../sanity";
+import Navbar from "../components/Layout/Navbar";
 
 const Home = () => {
   const open = useRecoilValue(menuState);
@@ -28,37 +29,38 @@ const Home = () => {
       </Head>
 
       {open ? <HamberMenu /> : null}
+      <Navbar />
       <Header />
-      <div className='max-w-7xl m-auto'>
-          <section id="about">
-            <AboutPersis />
-          </section>
+      <div className="max-w-7xl m-auto">
+        <section id="about">
+          <AboutPersis />
+        </section>
 
-          <Panel />
-          <Workshops />
+        <Panel />
+        <Workshops />
 
-          <section id="why">
-            <WhyThisWorkshop />
-          </section>
+        <section id="why">
+          <WhyThisWorkshop />
+        </section>
 
-          <PriceList />
-          <EventDate />
-          <Loacation />
-          {/* <Sponsors /> */}
+        <PriceList />
+        <EventDate />
+        <Loacation />
+        {/* <Sponsors /> */}
 
-          <section id="blog">
+        <section id="blog">
           <Blog />
-          </section>
+        </section>
 
-          <section id="contact">
-            <JoinEvent />
-          </section>
+        <section id="contact">
+          <JoinEvent />
+        </section>
 
-          <Footer />
+        <Footer />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
 

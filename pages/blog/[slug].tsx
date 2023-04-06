@@ -2,10 +2,10 @@ import { GetStaticProps } from "next";
 import { sanityClient, urlFor } from "../../sanity";
 import { Post } from "../../typing";
 import PortableText from "react-portable-text";
-import BlogHeader from "../../components/Blog/BlogHeader";
 import HamberMenu from "../../components/Layout/HamberMenu";
 import { useRecoilValue } from "recoil";
 import { menuState } from "../../atoms/menuAtom";
+import Navbar from "../../components/Layout/Navbar";
 
 interface Props {
   post: Post;
@@ -16,7 +16,7 @@ function Post({ post }: Props) {
   return (
     <main className="bg-hero-pattern pb-10">
       {open ? <HamberMenu /> : null}
-      <BlogHeader />
+      <Navbar />
 
       <div
         className="w-full bg-cover bg-left md:bg-center h-[35rem] sm:h-[40rem]"

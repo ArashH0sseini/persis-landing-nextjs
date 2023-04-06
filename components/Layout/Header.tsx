@@ -2,11 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 
 function Header() {
-
   return (
     <header>
-      <Navbar />
-
       <div className="w-full bg-cover bg-left md:bg-center h-[35rem] sm:h-[40rem] bg-header">
         <div className="flex items-center justify-start h-full w-full bg-neutral-800 bg-opacity-40">
           <div className="text-start px-4 space-y-6 w-full max-w-6xl mx-auto">

@@ -2,11 +2,11 @@ import management from "../../assets/images/management.jpg";
 import performance from "../../assets/images/performance.jpg";
 import business from "../../assets/images/business.jpg";
 import modir from "../../assets/images/modir.jpeg";
-import BlogHeader from "../../components/Blog/BlogHeader";
 import Link from "next/link";
 import HamberMenu from "../../components/Layout/HamberMenu";
 import { useRecoilValue } from "recoil";
 import { menuState } from "../../atoms/menuAtom";
+import Navbar from "../../components/Layout/Navbar";
 
 function Posts() {
   const open = useRecoilValue(menuState);
@@ -14,7 +14,7 @@ function Posts() {
   return (
     <div className="bg-hero-pattern pb-10">
       {open ? <HamberMenu /> : null}
-      <BlogHeader />
+      <Navbar />
 
       <div
         className="w-full bg-cover bg-left md:bg-center h-[35rem] sm:h-[40rem]"
