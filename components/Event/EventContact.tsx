@@ -12,7 +12,7 @@ type Inputs = {
   job: string;
 };
 
-function JoinEvent() {
+function EventContact() {
   const { register, handleSubmit, reset } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     console.log(formData);
@@ -113,4 +113,4 @@ function JoinEvent() {
   );
 }
 
-export default JoinEvent;
+export default EventContact;

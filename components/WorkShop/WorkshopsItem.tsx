@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 function WorkshopsItem({ image, title, description }: any) {
-  console.log(description);
   return (
     <div className="flex flex-col justify-center items-center cursor-pointer my-4">
       <div className="group sm:h-80 w-72 sm:w-72 lg:w-60 h-80 xl:w-72 min-[500px]:w-60 [perspective:1000px] ">

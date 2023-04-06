@@ -4,7 +4,7 @@ import performance from "../../assets/images/performance.jpg";
 import business from "../../assets/images/business.jpg";
 import Link from "next/link";
 
-function Blog() {
+function BlogSection() {
   return (
     <div className="mb-20">
       <div className="flex px-10 items-center justify-between py-10">
@@ -60,4 +60,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default BlogSection;

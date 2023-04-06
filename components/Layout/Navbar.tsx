@@ -8,7 +8,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 
 function Navbar() {
   const [open, setOpen] = useRecoilState(menuState);
-
   return (
     <nav>
       <div className="container mx-auto px-6 py-3">
